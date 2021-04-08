@@ -25,10 +25,10 @@ jobs:
             echo'export DB_PROT=3306' >> $BASH_ENV
             source $BASH_ENV
 
-            # name: Add Database Connetion Environment Valiables
+            name: Add Database Connetion Environment Valiables
 
       - run:
-          pip install -r requirements.txt
+          command: pip install -r requirements.txt
           name: Install Dependencies
       - run:
           command: python manage.py test .
