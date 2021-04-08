@@ -23,7 +23,7 @@ jobs:
             echo'export DB_PASSWORD="password"' >>$BASH_ENV
             echo'export DB_HOST="localhost"' >> $BASH_ENV
             echo'export DB_PROT=3306' >> $BASH_ENV
-            echo'export SECRET_KEY="secret" >> $BASH_ENV
+            echo'export SECRET_KEY="secret"' >> $BASH_ENV
             source $BASH_ENV
 
           name: Add Database Connetion Environment Valiables
